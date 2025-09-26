@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.app {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.state-info {
+    margin-bottom: 30px;
+}
+
+.current-state {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.reward {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-clap {
+    background: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+    color: white;
+}
+
+.btn-stand {
+    background: linear-gradient(45deg, #4ECDC4, #7EDDD6);
+    color: white;
+}
+
+.btn-wave {
+    background: linear-gradient(45deg, #45B7D1, #6BC5D8);
+    color: white;
+}
+
+/* State colors */
+.state-black { background: linear-gradient(135deg, #2C2C2C, #404040); }
+.state-blue { background: linear-gradient(135deg, #4169E1, #6495ED); }
+.state-brown { background: linear-gradient(135deg, #8B4513, #A0522D); }
+.state-green { background: linear-gradient(135deg, #32CD32, #90EE90); }
+.state-magenta { background: linear-gradient(135deg, #FF00FF, #FF69B4); }
+.state-white { background: linear-gradient(135deg, #F5F5F5, #FFFFFF); }
+.state-red { background: linear-gradient(135deg, #FF6B6B, #FF8E8E); }
+.state-lightblue { background: linear-gradient(135deg, #87CEEB, #B0E0E6); }
+.state-yellow { background: linear-gradient(135deg, #FFD93D, #FFE066); }
+.state-lightpink { background: linear-gradient(135deg, #FFB6C1, #FFC0CB); }
+
+@media (max-width: 600px) {
+    .app {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+    }
+}

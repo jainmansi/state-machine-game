@@ -1,0 +1,49 @@
+{
+  "name": "state-machine-app",
+  "version": "1.0.0",
+  "description": "A React-based state machine application with interactive buttons and dynamic rewards",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx http-server . -p 3000 -o",
+    "build": "echo 'This is a static React app - no build step needed'",
+    "serve": "npx http-server . -p 8080"
+  },
+  "keywords": [
+    "react",
+    "state-machine",
+    "interactive",
+    "game",
+    "rewards",
+    "single-page-application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/state-machine-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/state-machine-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/state-machine-app#readme"
+}
