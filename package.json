@@ -4,10 +4,11 @@
   "description": "A React-based state machine application with interactive buttons and dynamic rewards",
   "main": "index.html",
   "scripts": {
-    "start": "npx http-server . -p 3000 -o",
-    "dev": "npx http-server . -p 3000 -o",
-    "build": "echo 'This is a static React app - no build step needed'",
-    "serve": "npx http-server . -p 8080"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "serve": "vite preview --port 8080"
   },
   "keywords": [
     "react",
@@ -20,7 +21,9 @@
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "@vitejs/plugin-react": "^4.7.0",
+    "http-server": "^14.1.1",
+    "vite": "^4.5.14"
   },
   "dependencies": {
     "react": "^18.2.0",
