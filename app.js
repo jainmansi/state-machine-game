@@ -66,7 +66,7 @@ const stateMachine = {
 };
 
 function App() {
-    const [currentState, setCurrentState] = useState('Black');
+    const [currentState, setCurrentState] = useState('Green');
     const [totalReward, setTotalReward] = useState(0);
     const [lastAction, setLastAction] = useState('');
 
@@ -130,7 +130,7 @@ function App() {
                     className="btn btn-stand" 
                     onClick={() => handleAction('stand')}
                 >
-                    🧍 Stand
+                    👍 Thumbs Up
                 </button>
                 <button 
                     className="btn btn-wave" 
